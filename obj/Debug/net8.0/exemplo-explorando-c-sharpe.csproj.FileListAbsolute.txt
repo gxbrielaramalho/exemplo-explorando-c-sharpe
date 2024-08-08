@@ -12,3 +12,4 @@ C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\
 C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\obj\Debug\net8.0\exemplo-explorando-c-sharpe.pdb
 C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\obj\Debug\net8.0\exemplo-explorando-c-sharpe.genruntimeconfig.cache
 C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\obj\Debug\net8.0\ref\exemplo-explorando-c-sharpe.dll
+C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\obj\Debug\net8.0\exemplo-explorando-c-sharpe.sourcelink.json

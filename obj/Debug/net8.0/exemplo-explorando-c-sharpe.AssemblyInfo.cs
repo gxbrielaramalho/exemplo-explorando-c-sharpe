@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("exemplo-explorando-c-sharpe")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f124b38f91d01967d2a1f48bdea24162a4d8695")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c2904ef8df95b057bdaaef2ba03bed6b1036162")]
 [assembly: System.Reflection.AssemblyProductAttribute("exemplo-explorando-c-sharpe")]
 [assembly: System.Reflection.AssemblyTitleAttribute("exemplo-explorando-c-sharpe")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
