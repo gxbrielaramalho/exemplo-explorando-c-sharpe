@@ -32,18 +32,13 @@ namespace exemplo_explorando_c_sharpe.Models
 
         public void ListarAlunos() 
         {
-            Console.WriteLine($"Alunos do curso de: {Nome}");
-
-            if (Alunos.Any())
+            Console.WriteLine($"Alunos do curso de: {Nome}"); 
+            
+            for (int count = 0; count < Alunos.Count; count++) 
             {
-                foreach (Pessoa aluno in Alunos) 
-                {
-                    aluno.Apresentar(); // Exibe o nome completo e a idade do aluno
-                }
-            }
-            else
-            {
-                Console.WriteLine("Não há alunos matriculados.");
+                // Corrigido erro de concatenação e adicionado espaço entre N° e número
+                string texto = "N° " + (count + 1) + ": " + Alunos[count].Nome + " " + Alunos[count].Sobrenome;
+                Console.WriteLine(texto); // Exibe o nome completo do aluno
             }
         }
     }
