@@ -12,7 +12,7 @@ namespace exemplo_explorando_c_sharpe.Models
         public string Nome { get; set; }
 
         // Propriedade pública "Alunos" que armazena uma lista de objetos do tipo "Pessoa".
-        public List<Pessoa> Alunos { get; set; }
+        public List<Pessoa> Alunos { get; set; } = new List<Pessoa>(); // Inicializa a lista para evitar null reference.
 
         // Método público "AdicionarAluno" que recebe um objeto do tipo "Pessoa" como parâmetro.
         public void AdicionarAluno(Pessoa aluno)
@@ -38,25 +38,24 @@ namespace exemplo_explorando_c_sharpe.Models
             return Alunos.Remove(aluno);
         }
 
-        public void ListarAlunos()
-{
-    // Verifica se há alunos na lista
-    if (Alunos.Count != 0)
-    {
-        Console.WriteLine("Lista de Alunos:");
-
-        // Percorre cada aluno na lista "Alunos"
-        foreach (var aluno in Alunos)
+        // Método público "ListarAlunos" que exibe os nomes completos de todos os alunos na lista.
+        public void ListarAlunos() 
         {
-            // Exibe o nome do aluno no console
-            Console.WriteLine(aluno.Nome);
+            // Verifica se há alunos na lista antes de tentar listar
+            if (Alunos.Any())
+            {
+                // Itera sobre cada aluno na lista "Alunos".
+                foreach (Pessoa aluno in Alunos) 
+                {
+                    // Exibe o nome completo do aluno no console.
+                    Console.WriteLine(aluno.Nome); // Corrigido para "Nome" ao invés de "NomeCompleto"
+                }
+            }
+            else
+            {
+                // Se não houver alunos, exibe uma mensagem informando.
+                Console.WriteLine("Não há alunos matriculados.");
+            }
         }
-    }
-    else
-    {
-        Console.WriteLine("Não há alunos matriculados.");
-    }
-}
-
     }
 }

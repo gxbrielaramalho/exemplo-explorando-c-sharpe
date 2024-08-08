@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+// Importa os namespaces necessários para o funcionamento do código.
+using System;
+
 namespace exemplo_explorando_c_sharpe.Models
 {
     // Define uma classe chamada "Pessoa" dentro do namespace.
@@ -15,6 +18,9 @@ namespace exemplo_explorando_c_sharpe.Models
         // Declara uma variável privada do tipo int chamada "_idade".
         private int _idade;
 
+        // Declara uma variável privada do tipo string chamada "_sobrenome".
+        private string _sobrenome;
+
         // Propriedade pública "Nome" para acessar e modificar o campo "_nome".
         public string Nome 
         { 
@@ -22,16 +28,38 @@ namespace exemplo_explorando_c_sharpe.Models
             get => _nome.ToUpper();
             
             // O método set permite definir o valor de "_nome".
-            set {
+            set 
+            {
                 // Verifica se o valor é uma string vazia.
-                if (value == "") 
+                if (string.IsNullOrWhiteSpace(value)) 
                 {
-                    // Se for vazio, lança uma exceção informando que o nome não pode ser vazio.
+                    // Se for vazio ou nulo, lança uma exceção informando que o nome não pode ser vazio.
                     throw new ArgumentException("O nome não pode ser vazio.");
                 }
 
                 // Se o valor não for vazio, atribui o valor à variável "_nome".
                 _nome = value;
+            }
+        }
+
+        // Propriedade pública "Sobrenome" para acessar e modificar o campo "_sobrenome".
+        public string Sobrenome 
+        { 
+            // O método get retorna o valor de "_sobrenome" convertido para letras maiúsculas.
+            get => _sobrenome.ToUpper();
+            
+            // O método set permite definir o valor de "_sobrenome".
+            set 
+            {
+                // Verifica se o valor é uma string vazia.
+                if (string.IsNullOrWhiteSpace(value)) 
+                {
+                    // Se for vazio ou nulo, lança uma exceção informando que o sobrenome não pode ser vazio.
+                    throw new ArgumentException("O sobrenome não pode ser vazio.");
+                }
+
+                // Se o valor não for vazio, atribui o valor à variável "_sobrenome".
+                _sobrenome = value;
             }
         }
 
@@ -42,7 +70,8 @@ namespace exemplo_explorando_c_sharpe.Models
             get => _idade;
             
             // O método set permite definir o valor de "_idade".
-            set {
+            set 
+            {
                 // Verifica se o valor é menor que zero.
                 if (value < 0) 
                 {
@@ -55,11 +84,11 @@ namespace exemplo_explorando_c_sharpe.Models
             } 
         }
 
-        // Método público "Apresentar" que exibe o nome e a idade no console.
+        // Método público "Apresentar" que exibe o nome completo (nome e sobrenome) e a idade no console.
         public void Apresentar() 
         {
-            // Exibe no console uma string formatada com o nome e a idade.
-            Console.WriteLine($"Nome: {Nome}, Idade: {Idade}");
+            // Exibe no console uma string formatada com o nome completo (Nome + Sobrenome) e a idade.
+            Console.WriteLine($"Nome Completo: {Nome} {Sobrenome}, Idade: {Idade}");
         }
     }
 }
