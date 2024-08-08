@@ -1,65 +1,30 @@
-﻿using exemplo_explorando_c_sharpe.Models;
-using System.Globalization;
+﻿using System;
+using System.Collections.Generic;
 
-
-try 
+namespace exemplo_explorando_c_sharpe
 {
-string [] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Exemplo de código
+            Queue<int> fila = new Queue<int>();
 
-foreach (string linha in linhas) {
-    Console.WriteLine(linha);
+            fila.Enqueue(10);
+            fila.Enqueue(20);
+            fila.Enqueue(30);
+
+            while (fila.Count > 0)
+            {
+                int item = fila.Dequeue();
+                Console.WriteLine($"Elemento removido: {item}");
+            }
+
+            fila.Enqueue(40);
+            fila.Enqueue(50);
+
+            Console.WriteLine($"Elemento no início da fila: {fila.Peek()}");
+            Console.WriteLine($"Elemento removido: {fila.Dequeue()}");
+        }
+    }
 }
-} catch(Exception ex) {
-    Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//using exemplo_explorando_c_sharpe.Models;
-
-//class Program
-//{
-    //static void Main()
-     //{
-        // Cria um curso com o nome "Inglês"
-       //  Curso curso = new Curso("Inglês");
-
-        // Cria alguns alunos
-        // Pessoa aluno1 = new Pessoa("João", "Silva", 20);
-       //  Pessoa aluno2 = new Pessoa("Maria", "Oliveira", 22);
-
-        // Adiciona os alunos ao curso
-        // curso.AdicionarAluno(aluno1);
-         //curso.AdicionarAluno(aluno2);
-
-        // Lista os alunos do curso
-        // curso.ListarAlunos();
-
-        // Mostra a quantidade de alunos matriculados
-         //Console.WriteLine($"Quantidade de alunos matriculados: {curso.ObterQuantidadeDeAlunosMatriculados()}");
-   //  }
- //}
