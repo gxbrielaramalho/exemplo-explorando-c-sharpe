@@ -1,0 +1,14 @@
+C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\obj\Debug\net8.0\exemplo-explorando-c-sharpe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\obj\Debug\net8.0\exemplo-explorando-c-sharpe.AssemblyInfoInputs.cache
+C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\obj\Debug\net8.0\exemplo-explorando-c-sharpe.AssemblyInfo.cs
+C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\obj\Debug\net8.0\exemplo-explorando-c-sharpe.csproj.CoreCompileInputs.cache
+C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\bin\Debug\net8.0\exemplo-explorando-c-sharpe.exe
+C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\bin\Debug\net8.0\exemplo-explorando-c-sharpe.deps.json
+C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\bin\Debug\net8.0\exemplo-explorando-c-sharpe.runtimeconfig.json
+C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\bin\Debug\net8.0\exemplo-explorando-c-sharpe.dll
+C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\bin\Debug\net8.0\exemplo-explorando-c-sharpe.pdb
+C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\obj\Debug\net8.0\exemplo-explorando-c-sharpe.dll
+C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\obj\Debug\net8.0\refint\exemplo-explorando-c-sharpe.dll
+C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\obj\Debug\net8.0\exemplo-explorando-c-sharpe.pdb
+C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\obj\Debug\net8.0\exemplo-explorando-c-sharpe.genruntimeconfig.cache
+C:\Users\Gabriela\OneDrive\Área de Trabalho\github\exemplo-explorando-c-sharpe\obj\Debug\net8.0\ref\exemplo-explorando-c-sharpe.dll
