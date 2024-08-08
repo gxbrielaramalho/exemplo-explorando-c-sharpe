@@ -1,12 +1,17 @@
 ﻿using exemplo_explorando_c_sharpe.Models;
 using System.Globalization;
 
+
+try 
+{
 string [] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
 
 foreach (string linha in linhas) {
     Console.WriteLine(linha);
 }
-
+} catch(Exception ex) {
+    Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
+}
 
 
 
