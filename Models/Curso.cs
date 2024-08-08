@@ -36,10 +36,12 @@ namespace exemplo_explorando_c_sharpe.Models
             
             for (int count = 0; count < Alunos.Count; count++) 
             {
-                // Corrigido erro de concatenação e adicionado espaço entre N° e número
-                string texto = "N° " + (count + 1) + ": " + Alunos[count].Nome + " " + Alunos[count].Sobrenome;
+               string texto = "N° " + (count + 1) + ": " + Alunos[count].Nome + " " + Alunos[count].Sobrenome;
                 Console.WriteLine(texto); // Exibe o nome completo do aluno
             }
+
+           
+           
         }
     }
 }

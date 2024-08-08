@@ -1,24 +1,60 @@
 ﻿using exemplo_explorando_c_sharpe.Models;
+using System.Globalization;
 
-class Program
-{
-    static void Main()
-    {
+string [] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+
+foreach (string linha in linhas) {
+    Console.WriteLine(linha);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//using exemplo_explorando_c_sharpe.Models;
+
+//class Program
+//{
+    //static void Main()
+     //{
         // Cria um curso com o nome "Inglês"
-        Curso curso = new Curso("Inglês");
+       //  Curso curso = new Curso("Inglês");
 
         // Cria alguns alunos
-        Pessoa aluno1 = new Pessoa("João", "Silva", 20);
-        Pessoa aluno2 = new Pessoa("Maria", "Oliveira", 22);
+        // Pessoa aluno1 = new Pessoa("João", "Silva", 20);
+       //  Pessoa aluno2 = new Pessoa("Maria", "Oliveira", 22);
 
         // Adiciona os alunos ao curso
-        curso.AdicionarAluno(aluno1);
-        curso.AdicionarAluno(aluno2);
+        // curso.AdicionarAluno(aluno1);
+         //curso.AdicionarAluno(aluno2);
 
         // Lista os alunos do curso
-        curso.ListarAlunos();
+        // curso.ListarAlunos();
 
         // Mostra a quantidade de alunos matriculados
-        Console.WriteLine($"Quantidade de alunos matriculados: {curso.ObterQuantidadeDeAlunosMatriculados()}");
-    }
-}
+         //Console.WriteLine($"Quantidade de alunos matriculados: {curso.ObterQuantidadeDeAlunosMatriculados()}");
+   //  }
+ //}
