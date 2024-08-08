@@ -1,30 +1,24 @@
 ﻿using exemplo_explorando_c_sharpe.Models;
 
-Pessoa p1 = new Pessoa();
-p1.Nome = "Gabriela";
-p1.Sobrenome = "Ramalho";
-p1.Idade = 20;
+class Program
+{
+    static void Main()
+    {
+        // Cria um curso com o nome "Inglês"
+        Curso curso = new Curso("Inglês");
 
-Pessoa p2 = new Pessoa();
-p2.Nome = "Roberto";
-p2.Sobrenome = "Guedes Queiroz";
-p2.Idade = 32;
+        // Cria alguns alunos
+        Pessoa aluno1 = new Pessoa("João", "Silva", 20);
+        Pessoa aluno2 = new Pessoa("Maria", "Oliveira", 22);
 
-Curso cursoDeIngles = new Curso();
-cursoDeIngles.Nome = "Inglês";
-cursoDeIngles.Alunos = new List<Pessoa>();
+        // Adiciona os alunos ao curso
+        curso.AdicionarAluno(aluno1);
+        curso.AdicionarAluno(aluno2);
 
-cursoDeIngles.AdicionarAluno(p1);
-cursoDeIngles.AdicionarAluno(p2);
-cursoDeIngles.ListarAlunos();
+        // Lista os alunos do curso
+        curso.ListarAlunos();
 
-
-
-
-
-
-
-//Pessoa p1 = new Pessoa ();
-//p1.Nome = "Gabi";
-//p1.Idade = 31;
-//p1.Apresentar();
+        // Mostra a quantidade de alunos matriculados
+        Console.WriteLine($"Quantidade de alunos matriculados: {curso.ObterQuantidadeDeAlunosMatriculados()}");
+    }
+}
