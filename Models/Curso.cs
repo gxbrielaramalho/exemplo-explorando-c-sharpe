@@ -41,6 +41,9 @@ namespace exemplo_explorando_c_sharpe.Models
         // Método público "ListarAlunos" que exibe os nomes completos de todos os alunos na lista.
         public void ListarAlunos() 
         {
+            // Exibe o nome do curso
+            Console.WriteLine($"Alunos do curso de: {Nome}");
+
             // Verifica se há alunos na lista antes de tentar listar
             if (Alunos.Any())
             {
@@ -48,7 +51,7 @@ namespace exemplo_explorando_c_sharpe.Models
                 foreach (Pessoa aluno in Alunos) 
                 {
                     // Exibe o nome completo do aluno no console.
-                    Console.WriteLine(aluno.Nome); // Corrigido para "Nome" ao invés de "NomeCompleto"
+                    Console.WriteLine($"- {aluno.Nome} {aluno.Sobrenome}, Idade: {aluno.Idade}");
                 }
             }
             else

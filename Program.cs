@@ -3,10 +3,12 @@
 Pessoa p1 = new Pessoa();
 p1.Nome = "Gabriela";
 p1.Sobrenome = "Ramalho";
+p1.Idade = 20;
 
 Pessoa p2 = new Pessoa();
 p2.Nome = "Roberto";
 p2.Sobrenome = "Guedes Queiroz";
+p2.Idade = 32;
 
 Curso cursoDeIngles = new Curso();
 cursoDeIngles.Nome = "Inglês";
