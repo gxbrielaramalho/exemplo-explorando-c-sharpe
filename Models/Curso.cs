@@ -37,5 +37,26 @@ namespace exemplo_explorando_c_sharpe.Models
             // Remove o aluno específico da lista "Alunos" e retorna true se a remoção foi bem-sucedida, ou false se não foi.
             return Alunos.Remove(aluno);
         }
+
+        public void ListarAlunos()
+{
+    // Verifica se há alunos na lista
+    if (Alunos.Count != 0)
+    {
+        Console.WriteLine("Lista de Alunos:");
+
+        // Percorre cada aluno na lista "Alunos"
+        foreach (var aluno in Alunos)
+        {
+            // Exibe o nome do aluno no console
+            Console.WriteLine(aluno.Nome);
+        }
+    }
+    else
+    {
+        Console.WriteLine("Não há alunos matriculados.");
+    }
+}
+
     }
 }
